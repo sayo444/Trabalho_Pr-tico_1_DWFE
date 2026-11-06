@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gamepedia - Enciclopédia de Jogos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+   <header class="header d-flex flex-column flex-md-row justify-content-md-between align-items-stretch align-items-md-center gap-3 gap-md-0">
+      <div class="header_brand d-flex flex-column flex-md-row align-items-stretch align-items-md-center gap-3">
+         <div class="header_logo d-flex justify-content-center align-items-center align-self-start align-self-md-auto">LOGO</div>
+         <form class="header_busca d-flex gap-2" action="#" method="get">
+             <input type="text" class="flex-fill" placeholder="Busca" name="busca-rapida">
+             <button type="submit">Filtrar</button>
+         </form>
+      </div>
+
+      <nav class="header_menu">
+         <ul class="list-unstyled mb-0 d-flex justify-content-between justify-content-md-start gap-2 gap-md-3">
+            <li><a href="#destaque">Home</a></li>
+            <li><a href="#catalogo">Catálogo</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#perfil">Perfil/login</a></li>
+         </ul>
+       </nav>
+   </header>
+
+   <main class="main">
+
+    <section class="destaque" id="destaque">
+        <h1>Destaque da semana</h1>
+        <article class="destaque_card">
+            <div class="destaque_info d-flex flex-column align-items-start">
+                <h2 class="destaque_titulo">The last of us part 1</h2>
+                <p class="destaque_nota">Nota Metacritic: 89</p>
+            </div>
+            <img src="imagens/the last of us part 1.jpg" alt="Capa do jogo The last of us part 1">
+        </article>
+    </section>
+
+    <section class="sobre" id="sobre">
+        <h2>Sobre a Gamepedia</h2>
+        <p class="sobre_texto">
+            A Gamepedia é uma enciclopédia dedicada aos jogos que marcaram os últimos anos.
+            Aqui você encontra notas da crítica, gênero, plataforma e ano de lançamento de cada título,
+            tudo em um só lugar para ajudar você a decidir qual jogar em seguida.
+        </p>
+    </section>
+
+    <section class="busca-acervo">
+        <h2>Busca no acervo</h2>
+        <form class="form_busca d-flex flex-column flex-md-row flex-md-wrap gap-3" action="#" method="get">
+            <input type="text" placeholder="Nome do jogo" name="nome-jogo">
+
+            <select name="plataforma">
+                <option value="">Plataforma</option>
+                <option value="pc">PC</option>
+                <option value="playstation">PlayStation</option>
+                <option value="xbox">Xbox</option>
+                <option value="nintendo">Nintendo</option>
+            </select>
+
+            <select name="genero">
+                <option value="">Gênero</option>
+                <option value="acao">Ação</option>
+                <option value="aventura">Aventura</option>
+                <option value="rpg">RPG</option>
+            </select>
+
+            <button type="submit">Filtrar</button>
+        </form>
+    </section>
+
+    <section class="catalogo" id="catalogo">
+        <h2>Catálogo de Jogos</h2>
+
+        <!-- 3 colunas (desktop), 2 (tablet), 1 (mobile) -->
+        <div class="row g-4">
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <article class="catalogo_card h-100">
+                    <img src="imagens/the last of us part 2.jpg" alt="Capa do jogo The last of us part 2">
+                    <h3>The last of us part 2</h3>
+                    <p>Gênero: Ação</p>
+                    <p>Nota Metacritic: 93</p>
+                    <p>Lançamento: 2020</p>
+                </article>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <article class="catalogo_card h-100">
+                    <img src="imagens/red dead redemption 2.jpg" alt="Capa do jogo Red Dead Redemption 2">
+                    <h3>Red Dead Redemption 2</h3>
+                    <p>Gênero: Aventura</p>
+                    <p>Nota Metacritic: 97</p>
+                    <p>Lançamento: 2018</p>
+                </article>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <article class="catalogo_card h-100">
+                    <img src="imagens/elden ring.jpg" alt="Capa do jogo Elden Ring">
+                    <h3>Elden Ring</h3>
+                    <p>Gênero: Aventura</p>
+                    <p>Nota Metacritic: 96</p>
+                    <p>Lançamento: 2022</p>
+                </article>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <article class="catalogo_card h-100">
+                    <img src="imagens/resident evil 2 remake.jpg" alt="Capa do jogo Resident Evil 2 Remake">
+                    <h3>Resident Evil 2 Remake</h3>
+                    <p>Gênero: Ação</p>
+                    <p>Nota Metacritic: 91</p>
+                    <p>Lançamento: 2019</p>
+                </article>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <article class="catalogo_card h-100">
+                    <img src="imagens/cyberpunk 2077.jpg" alt="Capa do jogo Cyberpunk 2077">
+                    <h3>Cyberpunk 2077</h3>
+                    <p>Gênero: RPG</p>
+                    <p>Nota Metacritic: 86</p>
+                    <p>Lançamento: 2020</p>
+                </article>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <article class="catalogo_card h-100">
+                    <img src="imagens/zelda breath of the wild.jpg" alt="Capa do jogo Zelda Breath of the Wild">
+                    <h3>Zelda Breath of the Wild</h3>
+                    <p>Gênero: Aventura</p>
+                    <p>Nota Metacritic: 97</p>
+                    <p>Lançamento: 2017</p>
+                </article>
+            </div>
+
+        </div>
+    </section>
+
+   </main>
+
+   <footer class="footer d-flex flex-column flex-md-row flex-md-wrap justify-content-md-between align-items-center text-center text-md-start gap-3" id="rodape">
+    <p class="mb-0">© 2026 Gamepedia. Todos os direitos reservados.</p>
+
+    <ul class="footer_social list-unstyled mb-0 d-flex justify-content-center gap-3">
+        <li><a href="#" aria-label="Gamepedia no Twitter/X">Twitter/X</a></li>
+        <li><a href="#" aria-label="Gamepedia no Instagram">Instagram</a></li>
+        <li><a href="#" aria-label="Gamepedia no Discord">Discord</a></li>
+        <li><a href="#" aria-label="Gamepedia no YouTube">YouTube</a></li>
+    </ul>
+
+    <nav class="footer_menu">
+        <ul class="list-unstyled mb-0 d-flex justify-content-center gap-3">
+            <li><a href="#destaque">Home</a></li>
+            <li><a href="#catalogo">Catálogo</a></li>
+            <li><a href="#perfil">Perfil/login</a></li>
+        </ul>
+    </nav>
+   </footer>
+
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -121,8 +121,8 @@ section h2{
     font-weight: bold;
 }
 
-/* Imagem responsiva: acompanha a largura da tela mantendo a proporção.
-   No desktop, max-height limita a altura e o cover recorta só o excesso. */
+/* Imagem responsiva */
+
 .destaque_card img{
     display: block;
     width: 100%;
@@ -227,4 +227,49 @@ section h2{
 
 .footer_menu a:hover{
     color: #66c0f4;
+}
+
+/* ===== NOVO: slider, links e detalhes ===== */
+
+#slider img{
+    height: 450px;
+    object-fit: cover;
+    object-position: center 25%;
+}
+
+#slider .carousel-caption{
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 40px 56px 24px;
+    text-align: left;
+    background: linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0));
+}
+
+.catalogo_card a{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.sobre a{
+    color: #66c0f4;
+}
+
+.foto{
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+#detalhe h1, #detalhe h2{
+    color: #ffffff;
+    margin-bottom: 16px;
+}
+
+/* Celular */
+@media (max-width: 768px){
+    #slider img{ height: 250px; }
+    #slider .carousel-caption{ padding: 20px 16px 30px; }
+    #slider .carousel-caption p{ display: none; }
 }
